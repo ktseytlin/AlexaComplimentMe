@@ -1,7 +1,7 @@
 from ask import alexa
 from random import randint
 
-def lambda_handler(request_obj, context={}):
+def lambda_handler(request_obj, context=None):
     ''' All requests start here '''
     return alexa.route_request(request_obj)
 
