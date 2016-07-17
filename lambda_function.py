@@ -21,7 +21,7 @@ def launch_request_handler(request):
 def session_ended_request_handler(request):
     return alexa.create_response(message="Bye!")
 
-@alexa.intent('ComplimentMe')
+@alexa.intent('GetComplimentIntent')
 def get_compliments(request):
     linesOfCompliments = [line.rstrip('\n') for line in open('compliments.txt')]
 
