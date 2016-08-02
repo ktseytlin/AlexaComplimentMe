@@ -7,4 +7,6 @@ GetComplimentIntent    tell me a compliment please
 AMAZON.HelpIntent    what can I say
 AMAZON.HelpIntent    what can I ask
 AMAZON.StopIntent  no stop
+AMAZON.StopIntent  stop
 AMAZON.StopIntent  no
+AMAZON.StopIntent  bye
