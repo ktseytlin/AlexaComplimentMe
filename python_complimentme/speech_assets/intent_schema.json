@@ -1,0 +1,13 @@
+{
+    "intents": [
+        {
+            "intent": "GetComplimentIntent"
+        },
+        {
+            "intent": "AMAZON.HelpIntent"
+        },
+        {
+            "intent": "AMAZON.StopIntent"
+        }
+    ]
+}

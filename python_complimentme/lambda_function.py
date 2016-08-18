@@ -5,7 +5,7 @@ def lambda_handler(request_obj, context={}):
     return alexa.route_request(request_obj)
 
 @alexa.default_handler()
-def default_handler():
+def default_handler(request):
     return alexa.create_response(message="Just say Alexa compliment me!")
 
 @alexa.request_handler("LaunchRequest")
@@ -26,7 +26,7 @@ def get_compliment_intent_handler(request):
     randCompliment = (randint(0,len(linesOfCompliments)-1))
     compliment = linesOfCompliments[randCompliment]
 
-    return alexa.create_response(message=compliment, end_session=True)
+    return alexa.create_response(message=compliment, end_session=False)
 
 @alexa.intent_handler("AMAZON.HelpIntent")
 def help_intent_handler(request):
