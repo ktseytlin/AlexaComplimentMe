@@ -6,18 +6,18 @@ def lambda_handler(request_obj, context={}):
 
 @alexa.default_handler()
 def default_handler(request):
-    return alexa.create_response(message="Just say Alexa compliment me!")
+    return launch_request_handler(request)
 
 @alexa.request_handler("LaunchRequest")
 def launch_request_handler(request):
-    return alexa.create_response(message="Welcome to Compliment Me! On your way out to conquer the day "
+    return alexa.create_response(message="Welcome to Sweet and Sour! On your way out to conquer the day "
                                  "or just need a pick me up? Boost yourself with a compliment!",
                                  reprompt_message='Would you like a compliment? '
-                                 'Say, Alexa Compliment Me.')
+                                 'Say, compliment Me.')
 
 @alexa.request_handler(request_type="SessionEndedRequest")
 def session_ended_request_handler(request):
-    return alexa.create_response(message="Bye!")
+    return alexa.create_response(message="Bye!", end_session=True)
 
 @alexa.intent_handler("GetComplimentIntent")
 def get_compliment_intent_handler(request):
@@ -26,12 +26,16 @@ def get_compliment_intent_handler(request):
     randCompliment = (randint(0,len(linesOfCompliments)-1))
     compliment = linesOfCompliments[randCompliment]
 
-    return alexa.create_response(message=compliment, end_session=False)
+    return alexa.create_response(message=compliment, end_session=True)
 
 @alexa.intent_handler("AMAZON.HelpIntent")
 def help_intent_handler(request):
-    return alexa.create_response(message="This skill compliments you when you say alexa compliment me!")
+    return alexa.create_response(message="This skill compliments you when you say compliment me!", end_session=False)
 
 @alexa.intent_handler("AMAZON.StopIntent")
 def stop_intent_handler(request):
-    return alexa.create_response(message="Bye!")
+    return alexa.create_response(message="Bye!", end_session=True)
+
+@alexa.intent_handler("AMAZON.CancelIntent")
+def cancel_intent_handler(request):
+    return alexa.create_response(message="Bye!", end_session=True)
