@@ -2,6 +2,8 @@
 
 Amazon Alexa project that will give you a compliment.
 
+[Download the skill from the Alexa Skills Store (it's free!!)](http://alexa.amazon.com/spa/index.html#skills/dp/B01KSB743Q/?ref=skill_dsk_skb_sr_0)
+
 This repo uses the [ask-alexa-pykit](https://github.com/anjishnu/ask-alexa-pykit).
 
 ### Additional compliments to add?
