@@ -1,11 +1,6 @@
-GetComplimentIntent    compliment me
-GetComplimentIntent    compliment me please
-GetComplimentIntent    give me a compliment
-GetComplimentIntent    give me a compliment please
-GetComplimentIntent    tell me a compliment
-GetComplimentIntent    tell me a compliment please
-GetComplimentIntent    get me a compliment
-GetComplimentIntent    get me a compliment please
+GetBreweriesNearby    find beer in {Zipcode}
+GetBreweriesNearby    find beer for me in {Zipcode}
+GetBreweriesNearby    find beer nearby {Zipcode}
 AMAZON.HelpIntent    what can I say
 AMAZON.HelpIntent    what can I ask
 AMAZON.StopIntent  no stop

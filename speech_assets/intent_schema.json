@@ -1,7 +1,13 @@
 {
     "intents": [
         {
-            "intent": "GetComplimentIntent"
+            "intent": "GetBreweriesNearby",
+            "slots": [
+              {
+              "name": "Zipcode",
+              "type": "AMAZON.NUMBER"
+              }
+           ]
         },
         {
             "intent": "AMAZON.HelpIntent"
