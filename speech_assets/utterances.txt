@@ -1,11 +1,11 @@
-GetComplimentIntent    compliment me
-GetComplimentIntent    compliment me please
-GetComplimentIntent    give me a compliment
-GetComplimentIntent    give me a compliment please
-GetComplimentIntent    tell me a compliment
-GetComplimentIntent    tell me a compliment please
-GetComplimentIntent    get me a compliment
-GetComplimentIntent    get me a compliment please
+GetFactIntent    I want a fun fact
+GetFactIntent    I want a fun fact now
+GetFactIntent    give me a fun fact
+GetFactIntent    give me a fun fact please
+GetFactIntent    tell me a fun fact
+GetFactIntent    tell me a fun fact please
+GetFactIntent    get me a fun fact
+GetFactIntent    get me a fun fact please
 AMAZON.HelpIntent    what can I say
 AMAZON.HelpIntent    what can I ask
 AMAZON.StopIntent  no stop
